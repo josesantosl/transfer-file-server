@@ -1,4 +1,4 @@
-#Transfer-file-server
+# Transfer-file-server
 
 yep, another basic lan file server with QRcode in terminal and fast Copy-Paste note.
 
