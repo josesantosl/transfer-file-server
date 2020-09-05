@@ -1,0 +1,38 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.boton{
+    padding: 15px 32px;
+    font-size:14;
+    text-align:center;
+}
+.btdel{
+    
+    right:10px;
+    padding: 15px 32px;
+    font-size:14;
+    text-align:center;
+    background-color:red;
+    
+}
+ul {
+    background: #3399ff;
+    padding: 20px 50px;
+    list-style-type: none;
+}
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+    color:black;
+    
+}
+

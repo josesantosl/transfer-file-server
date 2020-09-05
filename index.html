@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Transfer</title>
+    <link href="static/style.css" rel="stylesheet">
+    <script src="static/main.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Transfer</h1>
+      <form action="/paste" method="POST">
+	<textarea id="bloc" rows="15" cols="100" name="bloc">{{range .Bloc}}{{.}}{{end}}</textarea></br>
+	<div style="padding-top:30px;padding-bottom:50px;">
+	  <input class="boton" type="submit">
+	</div>
+      </form>
+      <div style="padding-bottom:30px;">
+	<form id="fileform" enctype="multipart/form-data" method="POST" action="/upload">
+	  <input type="file" name="archivo">
+	  <input type="submit" class="boton">
+	</form>
+      </div></br>
+    </center>
+    <ul>
+      {{range .Archivos}}
+      <li><a href="/d/{{.}}" download="{{.}}">{{.}}</a><button onclick="javascript:window.location.href='/del/{{.}}'" class="btdel">DEL</buttton></li>
+      {{end}}
+    </ul>
+    <div class="footer">Developed by Jose Santos L.</div>
+  </body>
+</html>
+   
